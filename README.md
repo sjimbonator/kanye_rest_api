@@ -1,7 +1,8 @@
 # A kanye.rest api client for Flutter.
 
-*"Life is the ultimate gift"*
-Kanye West
+This package can be used to fetch random Kanye West quotes from the [kanye.rest](https://kanye.rest/) api.
+
+*"Life is the ultimate gift"* - Kanye West
 
 # Installing
 
