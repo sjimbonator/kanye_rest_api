@@ -9,7 +9,8 @@ class QuoteRequestFailure implements Exception {}
 class QuoteNotFoundFailure implements Exception {}
 
 class KanyeRestApiClient {
-  KanyeRestApiClient({http.Client? httpClient}) : _httpClient = httpClient ?? http.Client();
+  KanyeRestApiClient({http.Client? httpClient})
+      : _httpClient = httpClient ?? http.Client();
 
   static const _baseUrl = 'api.kanye.rest';
   final http.Client _httpClient;

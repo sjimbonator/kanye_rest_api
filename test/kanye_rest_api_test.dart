@@ -10,7 +10,7 @@ class MockResponse extends Mock implements http.Response {}
 class FakeUri extends Fake implements Uri {}
 
 void main() {
-  group('MetaWeatherApiClient', () {
+  group('KanyeRestApiClient', () {
     late http.Client httpClient;
     late KanyeRestApiClient kanyeRestApiClient;
 
@@ -67,7 +67,8 @@ void main() {
       );
     });
 
-    test('throws QuoteNotFoundFailure on response with invalid quote', () async {
+    test('throws QuoteNotFoundFailure on response with invalid quote',
+        () async {
       final response = MockResponse();
       when(() => response.statusCode).thenReturn(200);
       when(() => response.body).thenReturn('{"quote" : 0 }');
