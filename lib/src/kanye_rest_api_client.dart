@@ -15,6 +15,9 @@ class KanyeRestApiClient {
   static const _baseUrl = 'api.kanye.rest';
   final http.Client _httpClient;
 
+  /// Use this method to fetch quotes from the API.
+  ///
+  /// Can throw an [QuoteRequestFailure] or [QuoteNotFoundFailure].
   Future<String> getQuote() async {
     final quoteRequest = Uri.https(_baseUrl, '/');
     final quoteResponse = await _httpClient.get(quoteRequest);

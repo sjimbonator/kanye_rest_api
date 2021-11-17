@@ -1,6 +1,6 @@
 name: kanye_rest_api
 description: A kanye.rest api client for Flutter. Use this to fetch random Kanye West quotes for your app.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/sjimbonator/kanye_rest_api
 
 environment:
